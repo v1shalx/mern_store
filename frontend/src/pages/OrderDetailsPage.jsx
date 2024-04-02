@@ -144,7 +144,7 @@ const OrderDetailsPage = () => {
                       {new Date(order?.deliveredAt).toLocaleString()}
                     </Message>
                   ) : (
-                    <Message variant={'danger'}>{'Not Delivered'}</Message>
+                    <Message variant={''}>{''}</Message>
                   )}
                 </ListGroup.Item>
                 <ListGroup.Item>
@@ -157,7 +157,7 @@ const OrderDetailsPage = () => {
                       Paid on {new Date(order?.paidAt).toLocaleString()}
                     </Message>
                   ) : (
-                    <Message variant={'danger'}>{'Not paid'}</Message>
+                    <Message variant={'danger'}>{'payment not done yet'}</Message>
                   )}
                 </ListGroup.Item>
                 <ListGroup.Item>
